@@ -1,0 +1,24 @@
+System Description for SportyBet: Sports Betting Platform \\Fadi Bahri
+
+Brief Overview:
+SportyBet offers sports enthusiasts a platform to bet on their favorite events. Users can browse sports, view matches, and place bets, all while receiving real-time match and odds updates.
+
+Software Architecture Overview:
+
+Major Components:
+User Interface (UI): Front-end for user interactions, such as betting and viewing matches.
+Authentication Service: Manages user registrations, logins, and profile access.
+Betting Engine: Handles bets, odds, and payouts.
+Real-time Update Service: Provides live match scores and odds adjustments.
+Database: Retains user profiles, match data, and betting records.
+Payment Gateway: Manages user deposits and withdrawals.
+Key Classes (Simplified UML Text Representation):
+Class: User
+Attributes: userID, username, password, email, balance
+Operations: register(), login(), logout(), updateProfile()
+Class: Match
+Attributes: matchID, team1, team2, date, status
+Operations: getOdds(), updateStatus()
+Class: Bet
+Attributes: betID, userID, matchID, amount, selectedOutcome
+Operations: placeBet(), cashOut()
