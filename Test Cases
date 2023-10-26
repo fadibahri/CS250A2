@@ -1,0 +1,41 @@
+Test Case for SportyBet: Sports Betting Platform
+Test Objective: Verify the core functionalities of the SportyBet platform based on the provided system description.
+Test Environment: SportyBet web application environment (QA/Staging)
+Test Data: Sample user data, match data, and betting data.
+Test Steps:
+	UI Verification
+	Launch the SportyBet platform.
+	Verify that the UI loads properly with all expected elements (sports list, match list, betting options, etc.).
+	Ensure responsiveness across different devices and screen sizes.
+	User Registration and Login
+	Navigate to the registration page.
+	Register a new user with valid data and verify success.
+	Attempt to register with already used email/username and verify error message.
+	Navigate to the login page.
+	Login with the newly registered credentials and verify access to the user profile.
+	Attempt to login with incorrect credentials and verify error message.
+	Betting on a Match
+	Browse through available sports and matches.
+	Select a match and view its odds.
+	Place a bet on a specific outcome for the match.
+	Verify that the bet amount is deducted from the user's balance.
+	Check the user's betting history to ensure the bet has been recorded.
+	Real-time Updates
+	While a match is ongoing, verify that live scores and odds are updated in real-time.
+	Ensure that any changes in match status are reflected immediately on the platform.
+	Cash Out
+	During a live match, navigate to the user's active bets.
+	Select the option to cash out on a bet.
+	Verify that the cash-out amount is added to the user's balance.
+	Ensure that the bet is marked as cashed out in the betting history.
+	Payment Gateway
+	Navigate to the deposit section.
+	Deposit a specified amount using a supported payment method and verify that the user's balance is updated.
+	Navigate to the withdrawal section.
+	Withdraw a specified amount and verify that the transaction is successful and the user's balance is updated accordingly.
+	Database Integrity
+	(This will require backend access) Check the database to ensure that all user, match, and betting data are stored correctly and without any data loss.
+Expected Results:
+All functionalities work as expected without any errors.
+Real-time updates are accurate and timely.
+Database retains all necessary data without inconsistencies.
